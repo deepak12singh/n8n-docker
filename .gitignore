@@ -1,0 +1,25 @@
+# Ignore environment variables
+.env
+
+# Ignore Docker volumes
+postgres_data/
+n8n_data/
+
+# Ignore Nginx logs (optional)
+nginx/sites-available/logs/
+*.log
+
+# Ignore system files
+.DS_Store
+
+# Ignore certs (managed by Certbot)
+etc/letsencrypt/
+
+# Ignore editor/IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore OS-generated files
+Thumbs.db
