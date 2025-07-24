@@ -1,3 +1,2 @@
 .env
 data/traefik/acme.json
-docker-compose.yml
