@@ -18,11 +18,11 @@ fi
 # 🧠 Temporarily stash any changes (including untracked files)
 git stash push -m "cron-temp" --include-untracked
 
-# 🔄 Pull with rebase safely
-git pull --rebase origin master
+# 🔄 Pull with rebase safely from 'main' branch
+git pull --rebase origin main
 
 # ♻️ Restore stash (may fail if nothing was stashed — ignore the error)
 git stash pop || true
 
-# ⬆️ Push changes to remote
-git push origin master
+# ⬆️ Push changes to 'main' branch
+git push origin main
