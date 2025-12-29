@@ -1,7 +1,7 @@
 
 services:
   traefik:
-    image: "traefik"
+    image: traefik:${TRAEFIK_VERSION}
     restart: always
     command:
       - "--api.dashboard=true"
@@ -36,7 +36,7 @@ services:
       - traefik.http.middlewares.auth.basicauth.users=${TRAEFIK_DASHBOARD_AUTH}
 
   n8n:
-    image: docker.n8n.io/n8nio/n8n
+    image: docker.n8n.io/n8nio/n8n:${N8N_VERSION}
     restart: always
     ports:
       - "127.0.0.1:5678:5678"
